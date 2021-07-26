@@ -1,4 +1,4 @@
-package src.Day1;
+package Day1;
 import java.util.Scanner;
 
 class Company{

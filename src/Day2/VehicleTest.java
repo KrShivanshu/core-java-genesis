@@ -65,8 +65,11 @@ class TwoWheeler extends Vehicle{
     public boolean isKickStartAvailable() {
         return kickStartAvailable;
     }
-    public void setKickStartAvailable(boolean kickStartAvailable) {
-        this.kickStartAvailable = kickStartAvailable;
+    public void setKickStartAvailable(String kickStartAvailable) {
+        if(kickStartAvailable.equals("yes"))
+        this.kickStartAvailable = true;
+        else
+        this.kickStartAvailable = false;
     }
     public TwoWheeler(String make,String vehicleNumber,String fuelType,int fuelCapacity,int cc,boolean kickStartAvailable){
         super(make, vehicleNumber, fuelType, fuelCapacity, cc);
@@ -150,8 +153,8 @@ public class VehicleTest {
             }
             else{
                 TwoWheeler t = new TwoWheeler(vMake,vNum,fType,fCap,eCap,true);
-                System.out.println("Kick Start Available(true/false):");
-                t.setKickStartAvailable(sc.nextBoolean());
+                System.out.println("Kick Start Available(yes/no):");
+                t.setKickStartAvailable(sc.nextLine());
                 t.displayMake();
                 t.displayBasicInfo();
                 t.displayDetailInfo();

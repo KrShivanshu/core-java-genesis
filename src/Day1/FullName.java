@@ -41,5 +41,6 @@ public class FullName extends Name {
         // join the two substrings
         String fullname = firstLetter + remainingLetters + " " + lastname;
         System.out.println(fullname);
+        sc.close();
     }
 }

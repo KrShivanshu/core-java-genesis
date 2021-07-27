@@ -27,6 +27,7 @@ public class primesum {
 
         if (count < 1) {
             System.out.println("Invalid array size!");
+            s.close();
             return;
         } else {
         System.out.println("Enter the array elements : ");

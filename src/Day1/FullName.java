@@ -33,7 +33,7 @@ public class FullName extends Name {
         f.setLname(sc.nextLine());
 
         String firstLetter = f.getFname().substring(0, 1);
-        String remainingLetters = f.getFname().substring(1, f.getFname().length());
+        String remainingLetters = f.getFname().substring(1, f.getFname().length()).toLowerCase();
 
         firstLetter = firstLetter.toUpperCase();
         String lastname = f.getLname().toUpperCase();

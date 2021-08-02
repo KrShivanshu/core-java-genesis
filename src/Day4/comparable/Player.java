@@ -1,5 +1,4 @@
 package Day4.comparable;
-import java.io.*;
 import java.lang.String;
 
 public class Player implements Comparable<Player>{
